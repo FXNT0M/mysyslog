@@ -1,7 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -g -I/home/ice/mysyslog1/libmysyslog -I/home/ice/mysyslog1/libmysyslog-text -I/home/ice/mysyslog1/libmysyslog-json
-LDFLAGS = -L/home/ice/mysyslog1/libmysyslog -L/home/ice/mysyslog1/libmysyslog-text -L/home/ice/mysyslog1/libmysyslog-json -lmysyslog -lmysyslog-text -lmysyslog-json
-
+CFLAGS = -Wall -g -I/home/fxnt0m/mysyslog1/libmysyslog -I/home/fxnt0m/mysyslog1/libmysyslog-text -I/home/fxnt0m/mysyslog1/libmysyslog-json
+LDFLAGS = -L/home/fxnt0m/mysyslog1/libmysyslog -L/home/fxnt0m/mysyslog1/libmysyslog-text -L/home/fxnt0m/mysyslog1/libmysyslog-json -lmysyslog -lmysyslog-text -lmysyslog-json
 all: libmysyslog-daemon
 
 mysyslog-daemon: libmysyslog-daemon.o
