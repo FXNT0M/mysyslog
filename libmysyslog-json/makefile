@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -g -fPIC -I/home/ice/mysyslog1/libmysyslog
+CFLAGS = -Wall -g -fPIC -I/home/fxnt0m/mysyslog1/libmysyslog
 LDFLAGS = -shared
 
 all: libmysyslog-json.so
