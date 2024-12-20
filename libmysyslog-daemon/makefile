@@ -3,10 +3,10 @@ CFLAGS = -Wall -g -I/home/fxnt0m/mysyslog/libmysyslog -I/home/fxnt0m/mysyslog/li
 LDFLAGS = -L/home/fxnt0m/mysyslog/libmysyslog -L/home/fxnt0m/mysyslog/libmysyslog-text -L/home/fxnt0m/mysyslog/libmysyslog-json -lmysyslog -lmysyslog-text -lmysyslog-json
 all: libmysyslog-daemon
 
-mysyslog-daemon: libmysyslog-daemon.o
+libmysyslog-daemon: libmysyslog-daemon.o
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-mysyslog-daemon.o: libmysyslog-daemon.c
+libmysyslog-daemon.o: libmysyslog-daemon.c
 	$(CC) $(CFLAGS) -c $<
 
 run: libmysyslog-daemon
